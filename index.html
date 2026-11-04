@@ -1,0 +1,856 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luna — магазин косметики</title>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/components.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <!--  -->
+    <header class="header">
+      <div class="container header-container">
+        <a href="#"><img src="./assets/images/logo/logo.svg" alt="Logo" /></a>
+        <div class="header-burger"><span></span><span></span><span></span></div>
+        <div class="header__nav">
+          <button class="header-close" type="button" aria-label="Закрыть меню">
+            ✕
+          </button>
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <a href="#about" class="header-nav__link">О нас</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#advantages" class="header-nav__link">Преимущества</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#products" class="header-nav__link">Продукты</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#reviews" class="header-nav__link">Отзывы</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#gift-sets" class="header-nav__link">Наборы</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="#FAQ" class="header-nav__link">FAQ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header-actions">
+          <a href="#" class="header-actions__link"
+            ><img src="./assets/images/icons/cart-icon.svg" alt="Корзина"
+          /></a>
+          <a href="#" class="header-actions__link"
+            ><img src="./assets/images/icons/user-icon.svg" alt="Вход"
+          /></a>
+        </div>
+      </div>
+    </header>
+    <!--  -->
+    <main class="main">
+      <div class="popup" id="popup-purchase">
+        <div class="popup__header">
+          <p class="popup__user-name">Имя Пользователя</p>
+          <button class="popup-close" type="button" aria-label="Закрыть меню">
+            ✕
+          </button>
+        </div>
+        <p class="popup__user-purchase">Покупка: <span>Название продукта</span></p>
+        <small>Спасибо за покупку ♡</small>
+      </div>
+      <div class="popup" id="popup-registr">
+        <div class="popup__header">
+          <p class="popup__user-name">Имя Пользователя</p>
+          <button class="popup-close" type="button" aria-label="Закрыть меню">
+            ✕
+          </button>
+        </div>
+        <p class="popup__user-purchase">Участвует в розыгрыше Luna!</p>
+        <small>Удачи ♡</small>
+      </div>
+      <!-- Hero-секция -->
+      <section id="hero" class="hero">
+        <div class="container hero-container">
+          <h1 class="hero__title">Твоя кожа заслуживает нежной заботы</h1>
+          <p class="section-text hero__text">
+            Открой мир Luna — косметики, созданной для бережного ухода,
+            естественного сияния и ежедневного удовольствия от маленьких
+            ритуалов красоты
+          </p>
+          <div class="hero-actions">
+            <a class="button button--theme_secondary">Наша коллекция</a>
+            <a class="button button--with_arrow">Выбрать уход <span>→</span></a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat hero-stats__featured">
+              <h4>12 000+</h4>
+              <p>Довольных покупателей</p>
+            </div>
+            <div class="hero-stats__group">
+              <div class="hero-stat">
+                <h4>15+</h4>
+                <p>средств в коллекции</p>
+              </div>
+              <div class="hero-stat">
+                <h4>98%</h4>
+                <p>положительных отзывов</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#giveaway" class="special-offer">
+          <small class="special-offer__title">
+            Выиграй Luna Premium — подарочный набор любимого ухода ♡
+          </small>
+          <small class="special-offer__countdown">02 : 34 : 42 : 25</small>
+        </a>
+      </section>
+
+      <!-- "О нас" -->
+      <section id="about" class="about" aria-labelledby="about-title">
+        <div class="container about-container">
+          <span class="subheading">Наша философия</span>
+          <h2 class="section-title" id="about-title">
+            Luna — больше, чем просто косметика
+          </h2>
+          <p class="section-text">
+            Мы верим, что настоящая красота начинается с любви к себе. Поэтому
+            создаём средства, которые превращают ежедневный уход в маленький
+            ритуал заботы. Наша философия проста: забота о себе не должна быть
+            сложной. Только приятные текстуры, тщательно подобранные компоненты
+            и внимание к каждой детали.
+          </p>
+          <ul class="principles">
+            <li class="principle">
+              <img src="./assets/images/icons/principle_1-icon.svg" alt="ic" />
+              <h3 class="principle__title">Природа</h3>
+              <p class="principle__desc">
+                Вдохновляемся природой и её компонентами
+              </p>
+            </li>
+            <li class="principle">
+              <img src="./assets/images/icons/principle_2-icon.svg" alt="ic" />
+              <h3 class="principle__title">Гармония</h3>
+              <p class="principle__desc">
+                Превращаем ежедневный уход в приятный ритуал
+              </p>
+            </li>
+            <li class="principle">
+              <img src="./assets/images/icons/principle_3-icon.svg" alt="ic" />
+              <h3 class="principle__title">Забота</h3>
+              <p class="principle__desc">
+                Создаём уход с вниманием к потребностям кожи
+              </p>
+            </li>
+          </ul>
+          <small class="small-print">
+            «С любовью к твоей коже, команда Luna» ♡
+          </small>
+        </div>
+      </section>
+
+      <!-- Преимущества -->
+      <section
+        id="advantages"
+        class="advantages"
+        aria-labelledby="advantages-title"
+      >
+        <div class="container">
+          <span class="subheading">Почему Luna?</span>
+          <h2 class="section-title" id="advantages-title">
+            Пять причин влюбиться в свой уход
+          </h2>
+          <div class="advantages__inner">
+            <ol class="advantages__list">
+              <li class="advantages__item">
+                <h4 class="advantages__title">
+                  <span>01.</span> Продуманные формулы
+                </h4>
+                <p class="advantages__text">
+                  Каждое средство создано с акцентом на комфорт кожи и
+                  эффективное ежедневное увлажнение.
+                </p>
+              </li>
+              <li class="advantages__item">
+                <h4 class="advantages__title">
+                  <span>02.</span> Компоненты, вдохновлённые природой
+                </h4>
+                <p class="advantages__text">
+                  В формулах используются растительные экстракты, масла и
+                  современные ухаживающие компоненты.
+                </p>
+              </li>
+              <li class="advantages__item">
+                <h4 class="advantages__title">
+                  <span>03.</span> Нежные текстуры
+                </h4>
+                <p class="advantages__text">
+                  Лёгкие кремы, шелковистые сыворотки и приятные маски, которые
+                  хочется использовать каждый день.
+                </p>
+              </li>
+              <li class="advantages__item">
+                <h4 class="advantages__title">
+                  <span>04.</span> Забота без лишнего
+                </h4>
+                <p class="advantages__text">
+                  Мы стремимся создавать понятные продукты без ненужного
+                  усложнения ежедневного ухода.
+                </p>
+              </li>
+              <li class="advantages__item">
+                <h4 class="advantages__title">
+                  <span>05.</span> Эстетика в каждой детали
+                </h4>
+                <p class="advantages__text">
+                  От упаковки до текстуры — каждый элемент создан, чтобы твой
+                  уход приносил удовольствие.
+                </p>
+              </li>
+            </ol>
+            <img src="./assets/images/advantages_img.jpg" alt="Крем" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Продукция -->
+      <section id="products" class="products" aria-labelledby="products-title">
+        <div class="container products-container">
+          <span class="subheading">Коллекция Luna</span>
+          <h2 class="section-title" id="products-title">
+            Найди свой идеальный ритуал красоты
+          </h2>
+          <button class="slider-arrow prev" id="products-prev">
+            <img src="./assets/images/icons/slider_arrow-icon.svg" alt="prev" />
+          </button>
+          <div class="products-slider">
+            <article class="product">
+              <div class="product__main">
+                <div class="product__image-container">
+                  <img
+                    src="./assets/images/products/product_1.jpg"
+                    alt="Hydra Cream"
+                  />
+                </div>
+                <div class="product__header">
+                  <h4 class="product__title">Hydra Cream</h4>
+                  <p class="product__price"><span>1 490 ₽</span>| 50 мл</p>
+                </div>
+              </div>
+              <div class="product__footer">
+                <p class="product__desc">
+                  Помогает поддерживать увлажнённость кожи и дарит ощущение
+                  комфорта.
+                </p>
+                <a href="#" class="button button--with_arrow">
+                  Узнать о товаре<span>→</span>
+                </a>
+              </div>
+            </article>
+            <article class="product">
+              <div class="product__main">
+                <div class="product__image-container">
+                  <img
+                    src="./assets/images/products/product_2.jpg"
+                    alt="Glow Serum"
+                  />
+                </div>
+                <div class="product__header">
+                  <h4 class="product__title">Glow Serum</h4>
+                  <p class="product__price"><span>1 790 ₽</span>| 30 мл</p>
+                </div>
+              </div>
+              <div class="product__footer">
+                <p class="product__desc">
+                  Сыворотка для ухода за тусклой кожей и поддержания ровного
+                  тона.
+                </p>
+                <a href="#" class="button button--with_arrow">
+                  Узнать о товаре<span>→</span>
+                </a>
+              </div>
+            </article>
+            <article class="product">
+              <div class="product__main">
+                <div class="product__image-container">
+                  <img
+                    src="./assets/images/products/product_3.jpg"
+                    alt="Pure Mask"
+                  />
+                </div>
+                <div class="product__header">
+                  <h4 class="product__title">Pure Mask</h4>
+                  <p class="product__price"><span>990 ₽</span>| 75 мл</p>
+                </div>
+              </div>
+              <div class="product__footer">
+                <p class="product__desc">
+                  Маска для дополнительного ухода. Помогает сделать кожу мягкой
+                  и увлажнённой.
+                </p>
+                <a href="#" class="button button--with_arrow">
+                  Узнать о товаре<span>→</span>
+                </a>
+              </div>
+            </article>
+            <article class="product">
+              <div class="product__main">
+                <div class="product__image-container">
+                  <img
+                    src="./assets/images/products/product_4.jpg"
+                    alt="Soft Touch"
+                  />
+                </div>
+                <div class="product__header">
+                  <h4 class="product__title">Soft Touch</h4>
+                  <p class="product__price"><span>690 ₽</span>| 75 мл</p>
+                </div>
+              </div>
+              <div class="product__footer">
+                <p class="product__desc">
+                  Нежная текстура с маслом ши для смягчения и ухода за сухой
+                  кожей рук.
+                </p>
+                <a href="#" class="button button--with_arrow">
+                  Узнать о товаре<span>→</span>
+                </a>
+              </div>
+            </article>
+          </div>
+          <button class="slider-arrow next" id="products-next">
+            <img src="./assets/images/icons/slider_arrow-icon.svg" alt="next" />
+          </button>
+        </div>
+      </section>
+
+      <!-- Ингредиенты продукции -->
+      <section
+        id="ingredients"
+        class="ingredients"
+        aria-labelledby="ingredients-title"
+      >
+        <div class="container ingredients-container">
+          <span class="subheading">Сила природы</span>
+          <h2 class="section-title" id="ingredients-title">
+            Красота начинается с правильных компонентов
+          </h2>
+          <p class="section-text">
+            Мы уделяем особое внимание составам, сочетая растительные компоненты
+            и современные ингредиенты для ухода за кожей.
+          </p>
+          <ul class="ingredients__list">
+            <li class="ingredients__item">
+              <div class="ingredients__image-container">
+                <img
+                  src="./assets/images/ingredients/ingredient_1.jpg"
+                  alt="Масло ши"
+                />
+              </div>
+              <div class="ingredients__name">
+                <h4 class="ingredients__title">Масло ши</h4>
+                <p class="ingredients__text">Смягчает и питает кожу</p>
+              </div>
+            </li>
+            <li class="ingredients__item">
+              <div class="ingredients__image-container">
+                <img
+                  src="./assets/images/ingredients/ingredient_2.jpg"
+                  alt="Гиалуроновая кислота"
+                />
+              </div>
+              <div class="ingredients__name">
+                <h4 class="ingredients__title">Гиалуроновая кислота</h4>
+                <p class="ingredients__text">Помогает удерживать влагу</p>
+              </div>
+            </li>
+            <li class="ingredients__item">
+              <div class="ingredients__image-container">
+                <img
+                  src="./assets/images/ingredients/ingredient_3.jpg"
+                  alt="Ниацинамид"
+                />
+              </div>
+              <div class="ingredients__name">
+                <h4 class="ingredients__title">Ниацинамид</h4>
+                <p class="ingredients__text">
+                  Помогает поддерживать ровный тон
+                </p>
+              </div>
+            </li>
+            <li class="ingredients__item">
+              <div class="ingredients__image-container">
+                <img
+                  src="./assets/images/ingredients/ingredient_4.jpg"
+                  alt="Экстракт зелёного чая"
+                />
+              </div>
+              <div class="ingredients__name">
+                <h4 class="ingredients__title">Экстракт зелёного чая</h4>
+                <p class="ingredients__text">
+                  Обладает антиоксидантными свойствами
+                </p>
+              </div>
+            </li>
+            <li class="ingredients__item">
+              <div class="ingredients__image-container">
+                <img
+                  src="./assets/images/ingredients/ingredient_5.jpg"
+                  alt="Алоэ вера"
+                />
+              </div>
+              <div class="ingredients__name">
+                <h4 class="ingredients__title">Алоэ вера</h4>
+                <p class="ingredients__text">
+                  Увлажняет и дарит ощущение свежести
+                </p>
+              </div>
+            </li>
+          </ul>
+          <small class="small-print"
+            >Без лишних обещаний — только продуманный уход и внимание к деталям
+            ♡</small
+          >
+        </div>
+      </section>
+
+      <!-- Отзывы -->
+      <section id="reviews" class="reviews" aria-labelledby="reviews-title">
+        <div class="container">
+          <span class="subheading">Ваша любовь — наша мотивация</span>
+          <h2 class="section-title" id="reviews-title">
+            Истории вашей красоты
+          </h2>
+          <div class="review-cards">
+            <article class="review-card">
+              <div class="review-card__user">
+                <img
+                  src="./assets/images/avatars/avatar_1.jpg"
+                  alt="аватар пользователя"
+                  class="review-card__user-avatar"
+                />
+                <div class="review-card__user-data">
+                  <h4>Мария, 27 лет</h4>
+                  <p>★★★★★</p>
+                </div>
+              </div>
+              <div class="review-card__desc">
+                <p class="review-card__opinion">
+                  «Очень понравилась текстура крема! Быстро впитывается, не
+                  оставляет липкости, а кожа после него мягкая и приятная.
+                  Теперь это часть моего утреннего ухода».
+                </p>
+                <small class="review-card__purchase"
+                  >Покупка: Hydra Cream</small
+                >
+              </div>
+            </article>
+            <article class="review-card">
+              <div class="review-card__user">
+                <img
+                  src="./assets/images/avatars/avatar_2.jpg"
+                  alt="аватар пользователя"
+                  class="review-card__user-avatar"
+                />
+                <div class="review-card__user-data">
+                  <h4>Алина, 24 года</h4>
+                  <p>★★★★★</p>
+                </div>
+              </div>
+              <div class="review-card__desc">
+                <p class="review-card__opinion">
+                  «Влюбилась в этот бренд с первого заказа! Очень приятный
+                  дизайн, нежные текстуры и ощущение маленького SPA прямо дома».
+                </p>
+                <small class="review-card__purchase">Покупка: Pure Mask</small>
+              </div>
+            </article>
+            <article class="review-card">
+              <div class="review-card__user">
+                <img
+                  src="./assets/images/avatars/avatar_3.jpg"
+                  alt="аватар пользователя"
+                  class="review-card__user-avatar"
+                />
+                <div class="review-card__user-data">
+                  <h4>Екатерина, 32 года</h4>
+                  <p>★★★★★</p>
+                </div>
+              </div>
+              <div class="review-card__desc">
+                <p class="review-card__opinion">
+                  «Заказывала сыворотку и крем для рук. Очень понравилось
+                  оформление упаковки, а сами средства оставили приятное
+                  впечатление. Обязательно попробую другие продукты».
+                </p>
+                <small class="review-card__purchase">Покупка: Glow Serum</small>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Наборы -->
+      <section
+        id="gift-sets"
+        class="gift-sets"
+        aria-labelledby="gift-sets-title"
+      >
+        <div class="container">
+          <span class="subheading">Твой идеальный уход</span>
+          <h2 class="section-title" id="gift-sets-title">
+            Больше заботы — в одном наборе
+          </h2>
+          <p class="section-text">
+            Мы собрали любимые средства Luna в готовые комплекты для разных
+            потребностей и настроения.
+          </p>
+          <div class="set-cards">
+            <article class="set-card">
+              <div class="set-card__header">
+                <h3 class="set-card__title">Daily Care</h3>
+                <p class="set-card__desc">Базовый уход</p>
+              </div>
+              <img
+                class="set-card__image"
+                src="./assets/images/gift_sets/gift_sets_img_1.jpg"
+                alt="Daily Care"
+              />
+              <ul class="set-card__list">
+                <li class="set-card__item">Hydra Cream — 50 мл</li>
+                <li class="set-card__item">Soft Touch — 75 мл</li>
+              </ul>
+              <div class="set-card__footer">
+                <div class="set-card__price-wrapper">
+                  <h4 class="set-card__price">1 990 ₽</h4>
+                </div>
+                <a href="#" class="button button--theme_secondary"
+                  >Выбрать набор</a
+                >
+              </div>
+            </article>
+            <article class="set-card set-card--popular_type">
+              <div class="set-card__header">
+                <h3 class="set-card__title">Glow Ritual</h3>
+                <p class="set-card__desc">Комплексный уход</p>
+              </div>
+              <img
+                class="set-card__image"
+                src="./assets/images/gift_sets/gift_sets_img_2.jpg"
+                alt="Glow Ritual"
+              />
+              <span class="set-card__badge">Популярный выбор</span>
+              <ul class="set-card__list">
+                <li class="set-card__item">Hydra Cream — 50 мл</li>
+                <li class="set-card__item">Glow Serum — 30 мл</li>
+                <li class="set-card__item">Pure Mask — 75 мл</li>
+              </ul>
+              <div class="set-card__footer">
+                <div class="set-card__price-wrapper">
+                  <h4 class="set-card__price">3 490 ₽</h4>
+                  <p class="set-card__old-price">4 270 ₽</p>
+                </div>
+                <a href="#" class="button button--theme_primary"
+                  >Выбрать набор</a
+                >
+              </div>
+            </article>
+            <article class="set-card">
+              <div class="set-card__header">
+                <h3 class="set-card__title">Luna Premium</h3>
+                <p class="set-card__desc">Полный ритуал</p>
+              </div>
+              <img
+                class="set-card__image"
+                src="./assets/images/gift_sets/gift_sets_img_3.jpg"
+                alt="Luna Premium"
+              />
+              <ul class="set-card__list">
+                <li class="set-card__item">Hydra Cream — 50 мл</li>
+                <li class="set-card__item">Hydra Cream — 50 мл</li>
+                <li class="set-card__item">Glow Serum — 30 мл</li>
+                <li class="set-card__item">Soft Touch — 75 мл</li>
+                <li class="set-card__item">Подарочная упаковка</li>
+              </ul>
+              <div class="set-card__footer">
+                <div class="set-card__price-wrapper">
+                  <h4 class="set-card__price">5 960 ₽</h4>
+                </div>
+                <a href="#" class="button button--theme_secondary"
+                  >Выбрать набор</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Розыгрыш -->
+      <section id="giveaway" class="giveaway" aria-labelledby="giveaway-title">
+        <div class="container">
+          <div class="giveaway-container">
+            <span class="subheading">Luna giveaway</span>
+            <h2 class="section-title" id="giveaway-title">
+              Подарки от Luna ждут тебя!
+            </h2>
+            <p class="section-text">
+              Участвуй в розыгрыше нашего премиального набора и подари себе
+              немного красоты.
+            </p>
+            <div class="giveaway-participants">
+              <h4 class="giveaway-countdown__title">Уже участвуют</h4>
+              <p class="giveaway-countdown__text">
+                <span>20</span>из 200 человек
+              </p>
+              <progress
+                class="giveaway-participants__progress"
+                value="20"
+                max="200"
+              ></progress>
+            </div>
+            <div class="giveaway-countdown">
+              <small class="giveaway-countdown__reg">
+                До завершения регистрации
+              </small>
+              <div class="countdown">
+                <div id="countdown-day" class="countdown__inner">
+                  <h4>02</h4>
+                  <small>дней</small>
+                </div>
+                <div id="countdown-hour" class="countdown__inner">
+                  <h4>34</h4>
+                  <small>часов</small>
+                </div>
+                <div id="countdown-minute" class="countdown__inner">
+                  <h4>47</h4>
+                  <small>минут</small>
+                </div>
+                <div id="countdown-second" class="countdown__inner">
+                  <h4>25</h4>
+                  <small>секунд</small>
+                </div>
+              </div>
+            </div>
+            <a href="#quick-form" class="button button--with_arrow">
+              Участвовать<span>→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="FAQ" class="FAQ" aria-labelledby="FAQ-title">
+        <div class="container">
+          <h2 class="section-title" id="FAQ-title">
+            Всё, что ты хотела узнать о Luna
+          </h2>
+          <div class="FAQ__list">
+            <details class="FAQ__detail" open>
+              <summary class="FAQ__summary">
+                Подходит ли косметика Luna для чувствительной кожи?
+              </summary>
+              <p class="FAQ__answer">
+                Наши средства разработаны для комфортного ежедневного ухода.
+                Однако реакция кожи индивидуальна. Рекомендуем изучать состав
+                конкретного продукта и перед первым использованием проводить
+                тест на небольшом участке кожи.
+              </p>
+            </details>
+            <details class="FAQ__detail">
+              <summary class="FAQ__summary">
+                Как правильно подобрать средства?
+              </summary>
+              <p class="FAQ__answer">
+                Начни с определения потребностей своей кожи. Для базового ухода
+                можно выбрать увлажняющий крем, а затем дополнить его сывороткой
+                или маской.
+              </p>
+            </details>
+            <details class="FAQ__detail">
+              <summary class="FAQ__summary">
+                Как осуществляется доставка?
+              </summary>
+              <p class="FAQ__answer">
+                Мы доставляем заказы по всей России. Сроки и стоимость доставки
+                зависят от региона и выбранного способа получения.
+              </p>
+            </details>
+            <details class="FAQ__detail">
+              <summary class="FAQ__summary">
+                Можно ли заказать косметику в подарок?
+              </summary>
+              <p class="FAQ__answer">
+                Конечно! Для этого у нас предусмотрены готовые подарочные наборы
+                в эстетичной упаковке.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- Быстрая форма -->
+      <section
+        id="quick-form"
+        class="quick-form"
+        aria-labelledby="quick-form-title"
+      >
+        <div class="container">
+          <span class="subheading">Твой шанс на подарок</span>
+          <h2 class="section-title" id="quick-form-title">
+            Один маленький шаг к большому подарку
+          </h2>
+          <div class="quick-form__inner">
+            <div class="quick-form__content">
+              <p class="section-text quick-form__text">
+                Заполни небольшую форму, чтобы стать участницей розыгрыша Luna
+                Premium. После регистрации мы отправим подтверждение на твою
+                электронную почту.
+              </p>
+              <ul class="quick-form__conditions">
+                <li class="quick-form__condition">
+                  <img src="./assets/images/icons/gift-icon.svg" alt="ic" />
+                  <p>Подарок стоимостью 4 990 ₽</p>
+                </li>
+                <li class="quick-form__condition">
+                  <img src="./assets/images/icons/mail-icon.svg" alt="ic" />
+                  <p>Подтверждение на почту</p>
+                </li>
+              </ul>
+              <small class="small-print">Твои данные защищены ♡</small>
+            </div>
+            <div class="quck-form__wrapper">
+              <h3 class="quick-form__title">
+                Заполни свои данные и нажми «Я участвую!»
+              </h3>
+              <form class="quick-form__form">
+                <input
+                  type="text"
+                  name="username"
+                  class="form-input"
+                  placeholder="Твоё имя"
+                  minlength="2"
+                  required
+                />
+                <input
+                  class="form-input"
+                  type="email"
+                  name="email"
+                  placeholder="name@example.com"
+                  autocomplete="email"
+                  required
+                />
+                <button
+                  type="submit"
+                  class="button button--theme_primary quck-form__button"
+                >
+                  Я участвую!
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--  -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer-logo__content">
+            <a href="#hero">
+              <img src="./assets/images/logo/footer_logo.svg" alt="logo" />
+            </a>
+            <small class="footer-logo-text">
+              Нежный уход.<br />Твоя естественная красота.
+            </small>
+          </div>
+
+          <div class="footer-nav">
+            <h4 class="footer-nav__title">Навигация</h4>
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item">
+                <a href="#about" class="footer-nav__link">О нас</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="#products" class="footer-nav__link">Продукты</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="#reviews" class="footer-nav__link">Отзывы</a>
+              </li>
+              <li class="footer-nav__item">
+                <a href="#gift-sets" class="footer-nav__link">Наборы</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-help">
+            <h4 class="footer-help__title">Помощь</h4>
+            <ul class="footer-help__list">
+              <li class="footer-help__item">
+                <a href="#ingredients" class="footer-help__link">Состав</a>
+              </li>
+              <li class="footer-help__item">
+                <a href="#FAQ" class="footer-help__link">FAQ</a>
+              </li>
+              <li class="footer-help__item">
+                <a href="#" class="footer-help__link">Доставка</a>
+              </li>
+              <li class="footer-help__item">
+                <a href="#" class="footer-help__link">Оплата</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-contacts">
+            <h4 class="footer-contacts__title">Контакты</h4>
+            <ul class="footer-contacts__list">
+              <li class="footer-contacts__item">
+                <a href="#" class="footer-contacts__link">+7 (000) 000-00-00</a>
+              </li>
+              <li class="footer-nav__item">
+                <a
+                  href="mailto:hello@luna-beauty.ru"
+                  class="footer-contacts__link"
+                  >hello@luna-beauty.ru</a
+                >
+              </li>
+              <li class="footer-contacts__item footer-contacts__item--socials">
+                <a href="#" class="footer-contacts__link">
+                  <svg class="social-icon" width="32" height="32">
+                    <use
+                      href="./assets/images/icons/socials-sprite.svg#icon-vk"
+                    ></use>
+                  </svg>
+                </a>
+                <a href="#" class="footer-contacts__link">
+                  <svg class="social-icon" width="32" height="32">
+                    <use
+                      href="./assets/images/icons/socials-sprite.svg#icon-inst"
+                    ></use>
+                  </svg>
+                </a>
+                <a href="#" class="footer-contacts__link">
+                  <svg class="social-icon" width="32" height="32">
+                    <use
+                      href="./assets/images/icons/socials-sprite.svg#icon-tg"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <small class="copyright">© 2026 Luna</small>
+          <a href="#" class="footer-bottom__link">
+            <small>Политика конфиденциальности</small>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/popups.js"></script>
+  </body>
+</html>

@@ -1,0 +1,224 @@
+.button {
+  padding: 0.625rem 0.9375rem;
+  border-radius: 50px;
+  width: 11.25rem;
+}
+.button--theme_primary,
+.button--with_arrow {
+  color: var(--color-text-light);
+  background-color: var(--color-btn);
+}
+.button--theme_secondary,
+input {
+  color: var(--color-btn);
+  border: 1px solid var(--color-btn);
+}
+
+.button--theme_primary:hover,
+.button--with_arrow:hover,
+.button--theme_secondary:hover {
+  color: var(--color-text);
+  background-color: var(--color-btn-hover);
+}
+.button--theme_secondary:hover {
+  border-color: var(--color-btn-hover);
+}
+.button--with_arrow {
+  gap: var(--space-8);
+}
+.button--with_arrow:hover {
+  gap: var(--space-16);
+}
+input {
+  padding: var(--space-8) var(--space-24);
+  border-radius: 50px;
+  background-color: transparent;
+  outline-color: var(--color-accent);
+}
+
+/* Шапка */
+.header {
+  position: fixed;
+  top: 1.25rem;
+  left: 0;
+  right: 0;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: var(--space-16) 0;
+  border-radius: 50px;
+  background-color: rgba(248, 241, 239, 0.6);
+  z-index: 100;
+}
+.header--scrolled {
+  top: 0;
+  max-width: 100%;
+  border-radius: 0;
+  background-color: var(--color-bg);
+  box-shadow: 0 2px 5px #49352e4d;
+}
+.header-container {
+  justify-content: space-between;
+  padding: 0 var(--space-32);
+}
+.header-nav__list {
+  display: flex;
+  gap: var(--space-24);
+}
+.header-actions {
+  display: flex;
+  gap: var(--space-24);
+}
+
+/* Карточка товара */
+.set-card {
+  background: #ebd7cf66;
+  padding: var(--space-16);
+}
+.set-card--popular_type {
+  background: var(--color-accent-light);
+}
+.set-card:hover {
+  box-shadow: 0 0 10px #49352e33;
+}
+.set-card__image {
+  border-radius: 14px;
+}
+.set-card__list {
+  text-align: left;
+}
+.set-card__item {
+  gap: var(--space-8);
+}
+.set-card__item:last-child {
+  margin-bottom: 0;
+}
+.set-card__item::before {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  background: var(--color-accent);
+  border-radius: 50%;
+}
+.set-card__footer {
+  margin-top: auto;
+}
+.set-card__price-wrapper {
+  gap: var(--space-16);
+  padding-top: var(--space-8);
+  border-top: 1px solid #49352e66;
+}
+.set-card__footer .button {
+  width: 100%;
+}
+.set-card__badge {
+  display: block;
+  background-color: var(--color-accent);
+  padding: 6px 0.625rem;
+  border-radius: 50px;
+  margin-right: auto;
+  font-weight: 600;
+}
+
+.set-card__old-price {
+  text-decoration: line-through;
+  opacity: 60%;
+}
+
+/* Подвал */
+.footer__inner {
+  max-width: 1110px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding-bottom: var(--space-64);
+}
+.footer-logo__content {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.footer-nav__list,
+.footer-help__list,
+.footer-contacts__list {
+  gap: var(--space-16);
+}
+
+.footer-contacts__item--socials {
+  display: flex;
+  gap: var(--space-16);
+  margin: 0 auto;
+}
+.footer-bottom {
+  background-color: var(--color-bg-secondary);
+  color: var(--color-text);
+  padding: var(--space-8) 0;
+}
+.footer-bottom .container {
+  justify-content: space-between;
+}
+
+.footer a:hover {
+  color: var(--color-accent);
+}
+
+/* Попап окошки */
+.popup {
+  position: fixed;
+  top: 100px;
+  right: 40px;
+  width: 300px;
+  background: var(--color-bg);
+  border-radius: 20px;
+  padding: var(--space-16);
+  display: flex;
+  flex-direction: column;
+  z-index: 150;
+  box-shadow: 0 0 10px #49352e4d;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(120%);
+  pointer-events: none;
+  transition: .4s;
+}
+.popup--visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+.popup__header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.popup-close {
+  color: var(--color-text);
+  font-weight: 700;
+  width: 32px;
+  height: 32px;
+  align-self: flex-end;
+}
+.popup__user-name {
+  font-weight: 700;
+}
+.popup__user-purchase {
+  font-weight: 700;
+  display: flex;
+  gap: var(--space-4);
+  font-size: 14px;
+
+}
+.popup__user-purchase span{
+  font-weight: 400;
+}
+.popup small{
+  text-align: end;
+  margin-top: var(--space-24);
+  color: var(--color-accent);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-accent);
+}
